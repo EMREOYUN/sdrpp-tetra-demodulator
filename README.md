@@ -5,6 +5,9 @@ Designed to fully demodulate and decode TETRA downlink signals
 
 Thanks to osmo-tetra authors for their great library
 
+## Changes
+* Added a line in order to make Android complation possible
+
 Signal chain:
 
 VFO->Demodulator(AGC->FLL->RRC->Maximum Likelihood(y[n]y'[n]) timing recovery->Costas loop)->Constellation diagram->Symbol extractor->Differential decoder->Bits unpacker->Osmo-tetra decoder->Sink
